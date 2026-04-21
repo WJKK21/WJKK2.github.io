@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대전 관평동 맛집 가이드</title>
+    <style>
+        :root {
+            --primary-color: #e67e22;
+            --secondary-color: #2c3e50;
+            --bg-color: #f9f9f9;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1 { margin: 0; font-size: 2rem; }
+        header p { margin: 0.5rem 0 0; opacity: 0.9; }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .category-title {
+            border-left: 5px solid var(--primary-color);
+            padding-left: 15px;
+            margin: 2rem 0 1rem;
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+            border: 1px solid #eee;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+            font-size: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 0;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #fff3e0;
+            color: #e67e22;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .tips {
+            background: #f0f4f8;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 3rem;
+            border-left: 5px solid #2980b9;
+        }
+
+        .tips h2 { margin-top: 0; font-size: 1.2rem; color: #2980b9; }
+        .tips ul { margin-bottom: 0; padding-left: 20px; }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🍽️ 관평동 맛집 가이드</h1>
+    <p>유성구 관평동(테크노밸리) 현지인 & 직장인 추천 맛집 리스트</p>
+</header>
+
+<div class="container">
+    
+    <!-- 고기류 -->
+    <div class="category-title">🥩 고기류 (회식 & 외식)</div>
+    <div class="grid">
+        <div class="card">
+            <span class="tag">갈비/삼겹살</span>
+            <h3>화산촌</h3>
+            <p>참숯향 가득한 갈비와 깔끔한 밑반찬이 매력적인 곳. 가족 외식 장소로 부동의 인기 1위!</p>
+        </div>
+        <div class="card">
+            <span class="tag">한우/프리미엄</span>
+            <h3>배짱</h3>
+            <p>고급스러운 분위기에서 즐기는 최상급 한우. 격식 있는 자리나 기념일에 강력 추천합니다.</p>
+        </div>
+        <div class="card">
+            <span class="tag">숙성삼겹살</span>
+            <h3>고기명당</h3>
+            <p>전문가가 직접 구워주는 육즙 가득한 숙성 고기. 편하게 대화하며 식사하기 좋습니다.</p>
+        </div>
+    </div>
+
+    <!-- 한식/탕류 -->
+    <div class="category-title">🍲 한식 및 든든한 국물</div>
+    <div class="grid">
+        <div class="card">
+            <span class="tag">감자탕/해장</span>
+            <h3>일당감자탕</h3>
+            <p>우거지가 듬뿍 들어간 진한 국물! 대전에서 매우 유명한 감자탕 노포 스타일 맛집입니다.</p>
+        </div>
+        <div class="card">
+            <span class="tag">칼국수/샤브</span>
+            <h3>관평동칼국수</h3>
+            <p>버섯 샤브샤브와 칼국수, 마지막 볶음밥까지 코스로 즐기는 가성비 최고 맛집.</p>
+        </div>
+        <div class="card">
+            <span class="tag">생선구이</span>
+            <h3>어대장</h3>
+            <p>화덕에서 구워 겉바속촉한 생선구이 전문점. 집밥이 그리울 때 최고의 선택입니다.</p>
+        </div>
+    </div>
+
+    <!-- 일식/이색 -->
+    <div class="category-title">🍱 일식 및 이색 맛집</div>
+    <div class="grid">
+        <div class="card">
+            <span class="tag">텐동/줄서는집</span>
+            <h3>호시텐</h3>
+            <p>바삭함이 살아있는 튀김덮밥 전문점. 관평동에서 가장 인기 있는 혼밥/데이트 장소 중 하나.</p>
+        </div>
+        <div class="card">
+            <span class="tag">수비드치킨</span>
+            <h3>인근주민</h3>
+            <p>부드러운 수비드 통닭과 파스타의 만남! 이태리통닭은 꼭 먹어봐야 할 별미입니다.</p>
+        </div>
+        <div class="card">
+            <span class="tag">초밥/스시</span>
+            <h3>스시안</h3>
+            <p>싱싱하고 길쭉한 생선회가 올라간 초밥. 깔끔한 구성으로 직장인 점심으로도 인기입니다.</p>
+        </div>
+    </div>
+
+    <!-- 양식 -->
+    <div class="category-title">🍝 양식 및 브런치</div>
+    <div class="grid">
+        <div class="card">
+            <span class="tag">이탈리안/분위기</span>
+            <h3>라미티(L'Amity)</h3>
+            <p>세련된 분위기에서 즐기는 파스타와 스테이크. 데이트나 소개팅 장소로 적합합니다.</p>
+        </div>
+        <div class="card">
+            <span class="tag">아울렛/가성비</span>
+            <h3>리미니(Rimini)</h3>
+            <p>현대아울렛 내 위치하여 쇼핑 후 방문하기 좋으며, 합리적인 가격의 세트 메뉴가 장점.</p>
+        </div>
+    </div>
+
+    <!-- 꿀팁 -->
+    <div class="tips">
+        <h2>💡 이용 팁</h2>
+        <ul>
+            <li><b>주차:</b> 관평동 먹자골목은 주차가 협잡하므로 공영주차장 이용을 권장합니다.</li>
+            <li><b>예약:</b> 화산촌, 배짱 등 인기 고기집은 저녁 회식 시간이 붐비니 미리 예약하세요.</li>
+            <li><b>주변:</b> 현대프리미엄아울렛 대전점이 차로 3분 거리 내에 있어 나들이 코스로 좋습니다.</li>
+        </ul>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 관평동 맛집 가이드 - 맛있게 드세요!</p>
+</footer>
+
+</body>
+</html>
